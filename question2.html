@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 2</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>LEVEL 2</h1>
+    <p>LEVEL 2 / 5</p>
+
+<div class="progress-container">
+    <div class="progress-bar" style="width: 40%;"></div>
+</div>
+    <p>YOUR SCORE: {{ score }}</p>
+
+    <h2>🚨 CRITICAL QUESTION 🚨</h2>
+
+    <h3>What's a thing I really want to do(with you)?</h3>
+
+ <a href="/question3?score={{ score }}">
+    <button>Go Japan</button>
+</a>
+
+<a href="/question3?score={{ score }}">
+    <button>Lie down on your lap on a bench</button>
+</a>
+
+<a href="/question3?score={{ score }}">
+    <button>Lose to you in chess</button>
+</a>
+
+<a href="/question3?score={{ score + 1 }}">
+    <button>All of the above</button>
+</a>
+
+</body>
+</html>
