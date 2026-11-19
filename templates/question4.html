@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 4</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>LEVEL 4</h1>
+
+
+    <p>YOUR SCORE: {{ score }}</p>
+    <p>LEVEL 4 / 5</p>
+
+<div class="progress-container">
+    <div class="progress-bar" style="width: 80%;"></div>
+</div>
+
+    <h2>🚨 EMERGENCY 🚨</h2>
+
+    <h3>Who was our science teacher when we first sat together?</h3>
+
+    <a href="/question5?score={{ score }}"><button>Miss Raz</button></a>
+    <a href="/question5?score={{ score }}"><button>Mr Shukla</button></a>
+    <a href="/question5?score={{ score }}"><button>Mr Wright</button></a>
+    <a href="/question5?score={{ score + 1 }}"><button>Miss Mohammed</button></a>
+
+</body>
+</html>
