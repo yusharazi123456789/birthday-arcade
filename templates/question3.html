@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 3</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>LEVEL 3</h1>
+<p>LEVEL 3 / 5</p>
+
+<div class="progress-container">
+    <div class="progress-bar" style="width: 60%;"></div>
+</div>
+    <p>YOUR SCORE: {{ score }}</p>
+
+    <h2>THE FINAL BOSS</h2>
+
+    <h3>Who did I keep blocking on your phone ?</h3>
+
+
+<a href="/question4?score={{ score + 1 }}">
+    <button>Arvin</button>
+</a>
+
+<a href="/question4?score={{ score }}">
+    <button>Mason</button>
+</a>
+
+<a href="/question4?score={{ score }}">
+    <button>Zain</button>
+</a>
+
+<a href="/question4?score={{ score }}">
+    <button>Abdullah</button>
+</a>
+</body>
+</html>
