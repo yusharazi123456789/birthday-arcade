@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 5</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>FINAL LEVEL</h1>
+    <p>LEVEL 5 / 5</p>
+
+<div class="progress-container">
+    <div class="progress-bar" style="width: 100%;"></div>
+</div>
+
+    <p>YOUR SCORE: {{ score }}</p>
+
+    <h2>THE ULTIMATE TEST TO FLEE THE FACILITY</h2>
+
+    <h3>What am I</h3>
+
+    <a href="/results?score={{ score + 1 }}"><button>The champion</button></a>
+    <a href="/results?score={{ score }}"><button>A hopeless romantic</button></a>
+    <a href="/results?score={{ score }}"><button>A chud</button></a>
+    <a href="/results?score={{ score }}"><button>A random kid</button></a>
+
+</body>
+</html>
